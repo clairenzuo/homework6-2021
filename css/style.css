@@ -1,9 +1,9 @@
 body {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", serif;
   margin: 0;
   padding: 0;
   font-size: 1em; 
-  background-image: url('../images/concrete_seamless.png');
+  background: url('../images/concrete_seamless.png');
   background-color: #f1f1f1;
 }
 
@@ -47,7 +47,6 @@ header{
   display: flex;
   align-items: center;
   flex-direction: column;
-  -ms-flex-align: center;
   align-content: center;
   max-height: 200px; 
 }
@@ -58,10 +57,10 @@ header{
 .nav_links {
   display: flex;
   flex-direction: column;
-
+  align-items: left;
 }
 
-.nav_links a{
+.nav_item a:visited {
   color: blue;
 }
 
@@ -90,7 +89,6 @@ footer{
   justify-content: center;
   flex-direction: row;
 }
-
 
 
 .card { 
@@ -143,16 +141,37 @@ footer{
 
 
 @media screen and (min-width: 850px){
-  
-  header{ 
-    display: flex; 
-    flex-direction: row; 
-    justify-content: space-between; 
-    overflow: visible;
-    position: sticky; 
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: sticky;
+    top: 10;
+    left: 10;
+    max-height: 90px;
   }
 
+body > header {
+    position: sticky;
+    top: 0px;    
+}
 
+
+header{
+  flex-direction:row;
+  justify-content:space-between;
+
+}
+body > header{
+  position: sticky;
+  top: 0px;
+}
+
+
+  .card > header {
+    position: static;
+    justify-content: center;
+  }
   .card button { /*FIXED*/
     margin: auto;
   }
@@ -182,7 +201,6 @@ footer{
   }
   
 
-
 @media print{
   body{
     background-image: none;
@@ -191,6 +209,10 @@ footer{
 
   nav { 
     width: 100%;
+  }
+
+  header {
+    max-height: 100px;
   }
 
   .nav_links {  
@@ -229,7 +251,3 @@ footer{
     content: '👍';
   }
 }
-
-
-
-
