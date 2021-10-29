@@ -213,7 +213,7 @@ body > header{
   }
 
   header {
-    max-height: 105px;
+    max-height: 100px;
   }
   .nav_links {  
     display: flex;  
@@ -254,6 +254,7 @@ body > header{
     content: '👍';
   }
 }
+
 
 
 
