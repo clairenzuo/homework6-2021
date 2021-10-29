@@ -167,24 +167,24 @@ body > header{
 }
 
 
-  .card > header {
-    position: static;
-    justify-content: center;
-  }
-  .card button { /*FIXED*/
-    margin: auto;
-  }
+.card > header {
+  position: static;
+  justify-content: center;
+}
+.card button { /*FIXED*/
+  margin: auto;
+}
 
-  .card { /*FIXED*/
-    flex-basis: 250px; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-  }
+.card { /*FIXED*/
+  flex-basis: 250px; 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+}
 
   .nav_links{ /*FIXED */
-    flex-direction: row;
-  }
+   flex-direction: row;
+}
 
 
   .card_big{ 
@@ -193,11 +193,12 @@ body > header{
     z-index: -99;}
   }
 }
-  @media screen and (prefers-reduced-motion){
+ 
+@media screen and (prefers-reduced-motion){
     #logo{
       animation-name: none;
     }
-  }
+}
 
 @media print{
   body{
