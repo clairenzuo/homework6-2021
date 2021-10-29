@@ -129,7 +129,7 @@ footer{
   width: 90%;
   margin-top: 15px;
   margin-bottom: 15px;
-  margin-left: 20px;
+  margin-left: 10px;
 }
 
 .card h3{
@@ -206,8 +206,15 @@ body > header{
 
   nav { 
     width: 100%;
+    background-color: transparent;
+    /* max-height: 2px;
+    height: 5px; */
+    margin-top: -20px;
   }
 
+  header {
+    max-height: 100px;
+  }
   .nav_links {  
     display: flex;  
     flex-direction: row;
@@ -223,6 +230,10 @@ body > header{
     flex-basis: 250px;
   }
 
+  h1 {
+    max-height:10px;
+  }
+  
 
   .gallery, #gallery{  
     display: none
@@ -243,6 +254,7 @@ body > header{
     content: '👍';
   }
 }
+
 
 
 
