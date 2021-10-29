@@ -51,17 +51,20 @@ header{
 
 /* LINKS TOP RIGHT*/
 
-
+nav {
+  background-color: white;
+}
 .nav_links {
   display: flex;
   flex-direction: column;
   align-items: left;
+  text-decoration: underline;
+  /* background-color: white; */
 }
 
 .nav_item a:visited {
   color: blue;
 }
-
 
 /* Header text formatting */
 
@@ -201,13 +204,8 @@ body > header{
     background-image: none;
   }
 
-
   nav { 
     width: 100%;
-  }
-
-  header {
-    max-height: 100px;
   }
 
   .nav_links {  
@@ -220,22 +218,21 @@ body > header{
     margin-left: 10px;
   }
 
-
-  .pricing {
-     display: flex;
-     align-items: flex-end;
-     flex-flow: nowrap;
+  .card {
+    border: 2px solid #45ADDD;
+    flex-basis: 250px;
   }
+
 
   .gallery, #gallery{  
     display: none
   }
 
-  .card_big{
-    -webkit-transform: scaleY(1.1);
-    transform: scaleY(1.1);
-    z-index: -99;
-  }
+  .pricing {
+    display: flex;
+    flex-flow: nowrap;
+    align-items: flex-end;
+   }
 
   .card ul li:nth-child(odd)::before {
     list-style-type: none;
@@ -246,5 +243,6 @@ body > header{
     content: '👍';
   }
 }
+
 
 
