@@ -213,7 +213,7 @@ body > header{
   }
 
   header {
-    max-height: 100px;
+    max-height: 105px;
   }
   .nav_links {  
     display: flex;  
